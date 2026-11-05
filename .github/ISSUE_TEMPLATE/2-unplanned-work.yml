@@ -1,0 +1,33 @@
+name: Unplanned work
+description: An incident, a broken build or an urgent fix; anything that displaced planned work
+title: "[unplanned] "
+labels: ["work:unplanned"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Unplanned work is tracked so its causes can be removed (Third Way). Do not put a
+        vulnerability here: follow SECURITY.md. Add `expedite` if this is an outage or a Critical
+        or High finding inside its SECURITY.md due date.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Symptom, when it started, what it displaced.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Immediate fix
+      description: Fill in as you work it.
+  - type: textarea
+    id: cause
+    attributes:
+      label: Cause
+      description: Required before closing.
+  - type: textarea
+    id: prevention
+    attributes:
+      label: Prevention
+      description: The new check, or the link to the planned issue that removes the cause. Required before closing.

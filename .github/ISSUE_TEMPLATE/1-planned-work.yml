@@ -1,0 +1,74 @@
+name: Planned work
+description: A feature, an improvement or a change, sorted by effort and reward (portfolio standard section 10)
+title: "[work] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After filing, apply the labels that match your answers: one `work:` and one `phase:`.
+        Phase 4 (thankless) is not started: use the "Accepted risk" form instead.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true when this is done, in one or two sentences.
+    validations:
+      required: true
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      options:
+        - "work:business - a feature or capability the product exists for"
+        - "work:internal - platform, CI, hardening, tooling or debt"
+        - "work:change - dependency, configuration or routine maintenance"
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      options:
+        - "Simple - half a day or less, no new platform"
+        - "Complex - days, or a new service to run"
+    validations:
+      required: true
+  - type: dropdown
+    id: reward
+    attributes:
+      label: Reward
+      description: High means it materially cuts a likely threat or unplanned work, or delivers what the product exists for.
+      options:
+        - High
+        - Lower
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase (from effort and reward)
+      options:
+        - "phase:1-quick-win - simple, high"
+        - "phase:2-major - complex, high"
+        - "phase:3-fill-in - simple, lower"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - "area:repos - repositories, pipelines, the GitHub account"
+        - "area:network - NAS, cluster, security host, network, endpoints"
+  - type: textarea
+    id: check
+    attributes:
+      label: The automated check that will prove it keeps working
+      description: Second Way. A test, CI step, posture check, Wazuh rule or catalog check.
+    validations:
+      required: true
+  - type: input
+    id: controls
+    attributes:
+      label: Controls
+      description: NIST SP 800-53 / CIS v8.1 / AI crosswalk, or "none".

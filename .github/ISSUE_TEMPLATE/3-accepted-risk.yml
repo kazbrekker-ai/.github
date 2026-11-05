@@ -1,0 +1,35 @@
+name: Accepted risk (phase 4, thankless)
+description: Complex, low-reward work we decide not to do; recorded with a compensating control and a review date
+title: "[accepted risk] "
+labels: ["phase:4-thankless"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Phase 4 is not a to-do list. File this, close it as "not planned", and record the same
+        entry in the risk register in CISO Assistant (RA-7, PM-9).
+  - type: textarea
+    id: item
+    attributes:
+      label: The work we are not doing
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why the return is low here
+    validations:
+      required: true
+  - type: textarea
+    id: compensating
+    attributes:
+      label: What covers the risk instead
+    validations:
+      required: true
+  - type: input
+    id: review
+    attributes:
+      label: Review date
+      description: YYYY-MM-DD. Re-read on this date; reopen if the situation changed.
+    validations:
+      required: true
