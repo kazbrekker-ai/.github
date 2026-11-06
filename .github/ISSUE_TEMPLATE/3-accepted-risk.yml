@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Phase 4 is not a to-do list. File this, close it as "not planned", and record the same
-        entry in the risk register in CISO Assistant (RA-7, PM-9).
+        Phase 4 is not a to-do list. File this, then close it as "not planned". The closed
+        `phase:4-thankless` issues across kazbrekker-ai are the risk register (RA-7, PM-9):
+        `gh search issues --owner kazbrekker-ai --label phase:4-thankless` lists it.
   - type: textarea
     id: item
     attributes:
@@ -30,6 +31,6 @@ body:
     id: review
     attributes:
       label: Review date
-      description: YYYY-MM-DD. Re-read on this date; reopen if the situation changed.
+      description: YYYY-MM-DD, and nothing else on the line. Re-read on this date; reopen if the situation changed.
     validations:
       required: true
