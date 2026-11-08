@@ -6,7 +6,7 @@ this PR. Do not approve or merge the PR on behalf of a human reviewer.
 ## Review priorities
 
 1. Utilize the priorities defined in the security-workflow repository.
-2, Bugs, incorrect behavior, regressions, and unhandled edge cases.
+2. Bugs, incorrect behavior, regressions, and unhandled edge cases.
 3. Security issues, including authorization mistakes, injection risks, unsafe
    deserialization, exposed secrets, and unsafe handling of user-controlled data.
 4. Data loss, corruption, privacy-impacting behavior, or backward-incompatible
