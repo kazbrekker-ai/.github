@@ -3,7 +3,7 @@
 ## Shared governance baseline
 Before substantive AI-assisted work, read [AI Governance README](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/README.md) and [Master Instructions](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/instructions/MASTER.md). Apply relevant [Architecture](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/instructions/ARCHITECTURE.md), [Systems Engineering](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/instructions/SYSTEMS-ENGINEERING.md), [Lifecycle](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/instructions/LIFECYCLE.md), [GRC](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/instructions/GRC.md), and [DOC-001](https://github.com/kazbrekker-ai/ai-governance/blob/58e2f8c39f71dbd6b468d8733e33caa5c6263e2d/standards/DOC-001.md) as applicable.
 
-**Status:** the v1.0.0 governance documents are DRAFT / NOT APPROVED. This candidate baseline is not approved policy, a compliance assertion, or authority for production changes.
+**Status:** the v1.0.0 governance documents are APPROVED as portfolio working guidance. Approval is not a compliance attestation, control-effectiveness determination, or authorization for production changes.
 
 ## Authority and scope
 Applicable law, safety/security requirements, explicit human direction, and repository protection rules take precedence. Preserve this repository's existing instructions, architecture, and technical constraints. Surface conflicts rather than silently overriding them.
